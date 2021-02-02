@@ -1,0 +1,155 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #343434;
+    color: #fafafa;
+    font-family: 'Nunito', sans-serif;
+} 
+
+/*Styling the header: */
+.header_title{
+    margin-top: 40px;
+    text-align: center;
+    text-decoration: underline;
+}
+
+.header_description{
+    text-align: center;
+    border-bottom: 1px solid white;   
+}
+  
+/* Styling the navbar:*/
+.menu {
+    position: absolute;
+    z-index: 1000;
+    top: 10px;
+    right: 10px;
+    width: 36px;
+    height: 36px;
+    border: none;
+    cursor: pointer;
+}
+  
+.navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    width: 100%;
+    height: 50%;
+    overflow: hidden;
+    color: white;
+    transform: translateY(-100%);
+    transition: transform 0.5s ease-out;
+}
+  
+.showNav {
+    transform: translateY(0);
+}
+  
+.navbar ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+}
+  
+.navbar ul li a {
+    color: white;
+    padding-bottom: 10px;
+    border-bottom: 2px solid black;
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2rem;
+}
+  
+.navbar ul li a:hover, .navbar ul li a:focus {
+    border-bottom: 2px solid white;
+}
+
+/* Styling the main */
+.main{
+    align-items: center;
+}
+
+.main_img{
+    display: block;
+    width: 250px;
+    margin: 10px auto;
+    border-radius: 20px;
+    border: 1px solid black;
+    box-shadow: 0 0 5px black;
+    transition: all 250ms ease-in;
+}
+
+.main_img:hover{
+    transform: scale(1.1);
+}
+
+/*Styling the sections */
+.section{
+    margin-top: 10px;
+}
+
+/* Styling the form */
+.section_form{
+    margin-top: 40px;
+    margin-bottom: 100px;
+    text-align: center;
+}
+
+.section_form-email{
+    text-align: center;
+    background-color: #fafafa;
+    border-radius: 20px;
+    width: 200px;
+    padding: 5px;
+}
+
+/* Styling the footer */
+.footer{
+    text-align: center;
+    align-items: center;
+    position: fixed; 
+    bottom: 0; 
+    width: 100%;
+    font-size: smaller;
+    height: 50px;
+}
+
+.footer_social{
+    margin: auto;
+    font-size: x-large;
+    display: inline-block;
+}
+
+
+/* Media queries */
+
+@media only screen and (min-width: 720px) {
+    body{
+        width: 720px;
+        margin: auto;
+    }
+    
+    .footer{
+        width: 720px;
+    }
+   
+}
+
+@media only screen and (min-width: 960px) {
+
+
+    body{
+        width: 960px;
+    }
+
+    .footer{
+        width: 960px;
+    }
+}
